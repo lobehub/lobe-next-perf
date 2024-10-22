@@ -16,7 +16,7 @@ export default function Home() {
     <div style={{ background: theme.colorBgLayout, height: "90vh" }}>
       <div>
         <Segmented
-          onChange={(v) => setAppearance(v as ThemeAppearance)}
+          onChange={(v) => setAppearance(v as any)}
           options={options}
         />
       </div>
