@@ -13,7 +13,7 @@ export default function Home() {
   const theme = useTheme();
   const { appearance, setAppearance } = useThemeMode();
   return (
-    <div style={{ background: theme.colorBgLayout, height: "90vh" }}>
+    <div style={{ background: theme.colorBgLayout, height: "100vh" }}>
       <div>
         <Segmented
           onChange={(v) => setAppearance(v as any)}
