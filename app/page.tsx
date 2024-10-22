@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "antd";
+import { Button, Segmented, Divider } from "antd";
 import Theme from "./Theme";
 import { useTheme, useThemeMode } from "antd-style";
 
