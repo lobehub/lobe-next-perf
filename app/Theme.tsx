@@ -17,6 +17,7 @@ const Theme = ({ children }:any) => {
 
   return (
     <StyleRegistry>
+      <ThemeProvider theme={{ cssVar: true }} appearance={appearance}>
       <div>
         <Segmented
           onChange={(v) => setTheme(v as ThemeAppearance)}
@@ -24,7 +25,6 @@ const Theme = ({ children }:any) => {
         />
       </div>
       <Divider />
-      <ThemeProvider theme={{ cssVar: true }} appearance={appearance}>
         {children}
       </ThemeProvider>
     </StyleRegistry>
