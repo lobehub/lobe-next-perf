@@ -12,7 +12,7 @@ const options = [
   { label: '暗色', value: 'dark' },
 ];
 
-const Theme = ({ children }) => {
+const Theme = ({ children }:any) => {
   const [appearance, setTheme] = useState<ThemeAppearance>('light');
 
   return (
