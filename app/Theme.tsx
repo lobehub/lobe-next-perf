@@ -1,16 +1,13 @@
-'use client';
+"use client";
 
-import { ThemeAppearance, ThemeProvider } from 'antd-style';
-import { useState } from 'react';
+import { ThemeProvider } from "antd-style";
 
-import StyleRegistry from './StyleRegistry';
+import StyleRegistry from "./StyleRegistry";
 
-const Theme = ({ children }:any) => {
+const Theme = ({ children }: any) => {
   return (
     <StyleRegistry>
-      <ThemeProvider theme={{ cssVar: true }}>
-        {children}
-      </ThemeProvider>
+      <ThemeProvider theme={{ cssVar: true }}>{children}</ThemeProvider>
     </StyleRegistry>
   );
 };
