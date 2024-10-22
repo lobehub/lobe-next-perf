@@ -12,7 +12,7 @@ const options = [
   { label: '暗色', value: 'dark' },
 ];
 
-export default ({ children }) => {
+const Theme = ({ children }) => {
   const [appearance, setTheme] = useState<ThemeAppearance>('light');
 
   return (
@@ -30,3 +30,5 @@ export default ({ children }) => {
     </StyleRegistry>
   );
 };
+
+export default Theme;
